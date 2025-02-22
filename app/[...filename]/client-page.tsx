@@ -24,13 +24,13 @@ export default function ClientPage(props: ClientPageProps) {
       <Head>
         <title>{data?.page?.title}</title>
       </Head>
-      {data?.page?.hero && (
+      {/*{data?.page?.hero && (*/}
         <Cover
           image={data.page.hero}
           title="לזכרו של אל״מ רועי לוי"
           description={data?.page?.description ?? ''}
         />
-      )}
+	{/*)}*/}
       <Blocks {...data?.page} />
     </>
   );
